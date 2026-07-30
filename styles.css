@@ -1,7 +1,3 @@
-/*html, body {*/
-       /*[> margin: 0;<]*/
-	/*[>height: 100%;<]*/
-/*}*/
 
 body {
 	background: linear-gradient(
@@ -16,16 +12,17 @@ body {
 .content-wrapper {
 	display: grid;
 	grid-template-columns: 61% 39%;
-grid-template-rows: auto auto;
+	grid-template-rows: auto auto;
 	margin: auto 11vw auto 17vw;
 
 }
 
 .content-left {
+	border-bottom: #FFFFFF solid 1px;
 }
 
 .content-right {
-
+	border-bottom: #FF7D00 solid 1px;
 }
 
 .flexbox {
@@ -50,8 +47,14 @@ grid-template-rows: auto auto;
 }
 
 #menu-wrapper {
-
+	border: solid black 1px;
+	aspect-ratio: 17/20;
+	background-color: #FFFFFF;
+	height: 37vh;
+	min-height: 250px;
 }
+
+
 
 /*button {*/
 	/*aspect-ratio: 5/1;*/
@@ -69,20 +72,6 @@ grid-template-rows: auto auto;
 	/*font-size: x-small;*/
 /*}*/
 
-/*.contents.centered.horizontally {*/
-/*}*/
-
-/*.contents.centered.vertically {*/
-	/*height: 100%;*/
-	/*align-content: center;*/
-/*}*/
-
-/*.solid-black-border {*/
-	/*border-style: solid;*/
-	/*border-width: 1px;*/
-	/*border-color: #000000;*/
-	
-/*}*/
 
 /*#button-menu {*/
 	/*width: 18vw;*/
