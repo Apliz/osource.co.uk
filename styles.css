@@ -1,21 +1,53 @@
 
-body {
-	background: linear-gradient(
-		to right,
-		#FF7D00 0%,
-		#FF7D00 61%,
-		#FFFFFF 61%,
-		#FFFFFF 100%
-	);
-	padding: unset;;
-	margin: unset;
+
+/* eb-garamond-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/eb-garamond-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* eb-garamond-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eb-garamond-v33-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* jetbrains-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('/fonts/jetbrains-mono-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+       /* background: linear-gradient(*/
+		/*to right,*/
+		/*#FF7D00 0%,*/
+		/*#FF7D00 61%,*/
+		/*#FFFFFF 61%,*/
+		/*#FFFFFF 100%*/
+	/*);*/
+	/*padding: unset;;*/
+	/*margin: unset;*/
+/*}*/
+h1 {
+	font-family: JetBrains Mono;
+	font-weight: normal;
+}
 .content-wrapper {
 	display: grid;
-	grid-template-columns: 0.44fr 0.34fr 0.22fr;
+	grid-template-columns: 0.506fr 0.340fr 0.154fr;
 	grid-template-rows: auto auto;
-	/*margin: auto 11vw auto 17vw;*/
+	font-family: EB Garamond;
+	font-weight: normal;
 
 }
 
@@ -42,12 +74,27 @@ body {
 	text-align: left;
 	width: 64%;
 	margin: auto 18% auto 18%;
+	font-size: 2em;
+	font-family: inherit;
 
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-right: solid black 1px;
+  z-index: -1;
+  background-color: #FF7d00;
+  right: 39%;
 }
 
 #summary {
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
+	color: #FFFFFF;
+	font-weight: 600;
 }
 
 #menu-wrapper {

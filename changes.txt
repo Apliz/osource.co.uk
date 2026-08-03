@@ -1,0 +1,20 @@
+
+
+/* styles.css | http://127.0.0.1:5500/styles.css */
+
+body {
+  /* background: linear-gradient( to right, #FF7D00 0%, #FF7D00 61%, #FFFFFF 61%, #FFFFFF 100% ); */
+}
+
+/* Element | http://127.0.0.1:5500/index.html */
+
+#background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-right: solid black 1px;
+  z-index: -1;
+  background-color: #FF7d00;
+  right: 39%;
+}
