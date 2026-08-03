@@ -7,13 +7,15 @@ body {
 		#FFFFFF 61%,
 		#FFFFFF 100%
 	);
+	padding: unset;;
+	margin: unset;
 }
 
 .content-wrapper {
 	display: grid;
-	grid-template-columns: 61% 39%;
+	grid-template-columns: 0.44fr 0.34fr 0.22fr;
 	grid-template-rows: auto auto;
-	margin: auto 11vw auto 17vw;
+	/*margin: auto 11vw auto 17vw;*/
 
 }
 
@@ -23,6 +25,7 @@ body {
 
 .content-right {
 	border-bottom: #FF7D00 solid 1px;
+	grid-column: 2 / 3
 }
 
 .flexbox {
@@ -43,15 +46,16 @@ body {
 }
 
 #summary {
-	grid-column: 1 / span 2;
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
 }
 
 #menu-wrapper {
 	border: solid black 1px;
 	aspect-ratio: 17/20;
 	background-color: #FFFFFF;
-	height: 37vh;
-	min-height: 250px;
+/*	height: 37vh;*/
+/*	min-height: 250px;*/
 }
 
 
