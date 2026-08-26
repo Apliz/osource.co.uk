@@ -47,7 +47,7 @@ h1 {
 	display: grid;
 	grid-template-columns: 0.54fr 0.25fr 0.21fr;
 	grid-template-rows: 0.16fr 0.62fr 0.22fr;
-	margin: auto 12% auto 17%;
+	margin: 22vh 12% auto 17%;
 	font-family: EB Garamond;
 	font-weight: normal;
 
@@ -55,6 +55,7 @@ h1 {
 
 .content-left {
 	/*border-bottom: #FFFFFF solid 1px;*/
+    grid-row: 2/4;
 }
 
 .content-right {
@@ -114,6 +115,7 @@ h1 {
 
 #menu-subgrid {
 	grid-template-columns: 0.323fr auto;
+    margin-top: 24%;
 }
 
 #background {
@@ -142,7 +144,49 @@ h1 {
 /*	min-height: 250px;*/
 }
 
-
+@media (orientation: portrait) {
+    .content-wrapper {
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        margin: auto 22% auto 22%;
+    }
+    .content-left {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        border-bottom: unset;
+    }
+    .content-right {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .content-right.bottom-border.white {
+        border-bottom: unset;
+    }
+    .column-2.row-3 {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .column-3.row-3 {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .column-3.row-3 {
+        border-bottom: unset;
+    }
+    #summary {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #menu-wrapper {
+        height: unset;
+    }
+    #menu-subgrid {
+        grid-template-columns: 0.7fr auto;
+        grid-row: 4/5;
+        grid-column: 1/2;
+        margin-top: unset;
+    }
+}
 
 /*button {*/
 	/*aspect-ratio: 5/1;*/
