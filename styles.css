@@ -2,64 +2,88 @@
 
 /* eb-garamond-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/eb-garamond-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/eb-garamond-v33-latin-regular.woff2') format('woff2'); 
 }
 
 /* eb-garamond-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/eb-garamond-v33-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/eb-garamond-v33-latin-500.woff2') format('woff2');
 }
 
 
 /* jetbrains-mono-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
-  src: local('/fonts/jetbrains-mono-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: local('/fonts/jetbrains-mono-v24-latin-regular.woff2') format('woff2'); 
 }
 body {
-       /* background: linear-gradient(*/
-		/*to right,*/
-		/*#FF7D00 0%,*/
-		/*#FF7D00 61%,*/
-		/*#FFFFFF 61%,*/
-		/*#FFFFFF 100%*/
-	/*);*/
-	/*padding: unset;;*/
-	/*margin: unset;*/
-/*}*/
+	margin: unset;
+}
 h1 {
-	font-family: JetBrains Mono;
-	font-weight: normal;
+	font-family: EB Garamond;
+	font-weight: bold;
 	margin: unset;
 }
 .content-wrapper {
 	display: grid;
-	grid-template-columns: 0.54fr 0.25fr 0.21fr;
-	grid-template-rows: 0.16fr 0.62fr 0.22fr;
-	margin: 22vh 12% auto 17%;
-	font-family: EB Garamond;
+    font-family: EB Garamond;
 	font-weight: normal;
 
 }
 
+.main-content {
+    grid-template-columns: 0.54fr 0.25fr 0.21fr;
+	grid-template-rows: 0.16fr 0.62fr 0.22fr;
+	margin: 22vh 12% auto 17%;
+}
+
+.header-content {
+    grid-template-columns: 0.61fr auto;
+    grid-template-rows: auto;
+    margin: 9vh 0 7vh 0;
+}
+
+.name-card {
+    width: 61vw;
+    text-align: center;
+}
+.name-card > p {
+    padding: unset;
+    margin: unset;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-card {
+    margin-left: 2.5vw;
+    font-weight: bold;
+}
+
+.contact#phone {
+    margin-bottom: unset;
+
+}
+
+.contact#email {
+    margin-top: unset;
+}
+
 .content-left {
-	/*border-bottom: #FFFFFF solid 1px;*/
     grid-row: 2/4;
 }
 
 .content-right {
-	/*border-bottom: #FF7D00 solid 1px;*/
 	grid-column: 2 / 3
 }
 
@@ -146,9 +170,13 @@ h1 {
 
 @media (orientation: portrait) {
     .content-wrapper {
-        grid-template-columns: unset;
+    }
+    .header-content {
+    }
+    .main-content {
         grid-template-rows: unset;
-        margin: auto 22% auto 22%;
+        grid-template-columns: unset;
+        margin-top: unset;
     }
     .content-left {
         grid-row: 3 / 4;
@@ -188,35 +216,3 @@ h1 {
     }
 }
 
-/*button {*/
-	/*aspect-ratio: 5/1;*/
-/*}*/
-
-/*.menu-button {*/
-	/*display: block;*/
-	/*width: 64%;*/
-	/*margin: 15% auto 15% auto;*/
-	/*border-radius: 0;*/
-	/*background: #ffffff;*/
-	/*border: solid grey 1px;*/
-	/*filter: drop-shadow(1px 1px);*/
-	/*text-align: left;*/
-	/*font-size: x-small;*/
-/*}*/
-
-
-/*#button-menu {*/
-	/*width: 18vw;*/
-	/*position: fixed;*/
-	/*background: #FFFFFF;*/
-	/*aspect-ratio:17/20;*/
-	/*transform: translateX(52vw) translateY(32vh);*/
-	/*background*/
-
-	
-/*}*/
-
-/*#button-wrapper {*/
-	/*display: grid;*/
-	/*grid-template-rows: 1fr 1fr 1fr;*/
-/*}*/
