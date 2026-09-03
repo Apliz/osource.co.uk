@@ -32,7 +32,7 @@ html {
     overflow: hidden;
 }
 body {
-	/*margin: 0 0 0 auto;*/
+    margin: unset;
 }
 h1 {
 	font-family: EB Garamond;
@@ -61,14 +61,14 @@ a:link {
 }
 
 .header-content {
-    grid-template-columns: 0.82fr auto;
+    grid-template-columns: 0.78fr auto;
     grid-template-rows: auto;
     margin: 5% 12% 4% 17%;
-    width: 71%;
+    /*width: 71%;*/
 }
 
 .name-card {
-    /*width: 61vw;*/
+    width: 44vw;
     /*text-align: center;*/
 }
 .name-card > p {
@@ -80,10 +80,12 @@ a:link {
 
 .contact-card {
     /*margin-left: 2.5vw;*/
-    padding-left: 2.5vw;
+    /*padding-left: 2.5vw;*/
     font-weight: bold;
-    margin: 0 0 auto 0;
-    padding-top: 2%;
+    margin: 2% 0 auto 6%;
+    grid-column: 2 / 3;
+    width: 100%;
+    /*padding-top: 2%;*/
 }
 
 .contact#phone {
@@ -169,8 +171,8 @@ a:link {
   border-right: solid #5D5D5D 2px;
   z-index: -1;
   background-color: #FF7D00;
-  /*right: 39%;*/
-  width: 60.7%;
+  right: 39%;
+  /*width: 60.7%;*/
 }
 
 #summary {
