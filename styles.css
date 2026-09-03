@@ -35,17 +35,25 @@ h1 {
 	font-weight: bold;
 	margin: unset;
 }
+
+a:link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+
+}
 .content-wrapper {
 	display: grid;
     font-family: EB Garamond;
 	font-weight: normal;
+    font-size: 1.5rem;
 
 }
 
 .main-content {
     grid-template-columns: 0.54fr 0.25fr 0.21fr;
 	grid-template-rows: 0.16fr 0.62fr 0.22fr;
-	margin: 22vh 12% auto 17%;
+	margin: 7vh 12% auto 17%;
 }
 
 .header-content {
@@ -101,10 +109,12 @@ h1 {
 	text-align: left;
 	width: 64%;
 	margin: auto 18% auto 18%;
-	font-size: 1.5vw;
 	font-family: inherit;
-	padding: 1.7% 0 0 0.5%;
+	padding: 7% 0 0 0.5%;
 	letter-spacing: 2%;
+    display: inherit;
+    vertical-align: bottom;
+    
 
 }
 
@@ -161,11 +171,11 @@ h1 {
 }
 
 #menu-wrapper {
+    display: inherit;
 	border: solid black 1px;
 	aspect-ratio: 17/20;
 	background-color: #FFFFFF;
-/*	height: 37vh;*/
-/*	min-height: 250px;*/
+    height: 32vh;
 }
 
 @media (orientation: portrait) {
