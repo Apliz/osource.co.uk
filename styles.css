@@ -27,8 +27,12 @@
   font-weight: 400;
   src: local('/fonts/jetbrains-mono-v24-latin-regular.woff2') format('woff2'); 
 }
+
+html {
+    overflow: hidden;
+}
 body {
-	margin: unset;
+	/*margin: 0 0 0 auto;*/
 }
 h1 {
 	font-family: EB Garamond;
@@ -38,7 +42,7 @@ h1 {
 
 a:link {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: black;
 
 }
@@ -51,40 +55,44 @@ a:link {
 }
 
 .main-content {
-    grid-template-columns: 0.54fr 0.25fr 0.21fr;
-	grid-template-rows: 0.16fr 0.62fr 0.22fr;
+    grid-template-columns: 0.54fr 0.33fr auto;
+	grid-template-rows: 0.16fr 0.62fr 0.23fr auto;
 	margin: 7vh 12% auto 17%;
 }
 
 .header-content {
-    grid-template-columns: 0.61fr auto;
+    grid-template-columns: 0.82fr auto;
     grid-template-rows: auto;
-    margin: 9vh 0 7vh 0;
+    margin: 5% 12% 4% 17%;
+    width: 71%;
 }
 
 .name-card {
-    width: 61vw;
-    text-align: center;
+    /*width: 61vw;*/
+    /*text-align: center;*/
 }
 .name-card > p {
-    padding: unset;
+    /*padding: unset;*/
     margin: unset;
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-weight: bold;
 }
 
 .contact-card {
-    margin-left: 2.5vw;
+    /*margin-left: 2.5vw;*/
+    padding-left: 2.5vw;
     font-weight: bold;
+    margin: 0 0 auto 0;
+    padding-top: 2%;
 }
 
 .contact#phone {
-    margin-bottom: unset;
+    margin: unset;
 
 }
 
 .contact#email {
-    margin-top: unset;
+    margin: unset;
 }
 
 .content-left {
@@ -92,12 +100,13 @@ a:link {
 }
 
 .content-right {
-	grid-column: 2 / 3
+	grid-column: 2 / 4;
+    grid-row: 2 / 5;
 }
 
 .flexbox {
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 }
 
 .menu-button {
@@ -106,14 +115,14 @@ a:link {
 	border-radius: 0;
 	border: solid black 1px;
 	filter: drop-shadow(2px 2px black);
-	text-align: left;
-	width: 64%;
+	/*text-align: left;*/
+	/*width: 64%;*/
 	margin: auto 18% auto 18%;
 	font-family: inherit;
-	padding: 7% 0 0 0.5%;
+	/*padding: 7% 0 0 0.5%;*/
 	letter-spacing: 2%;
     display: inherit;
-    vertical-align: bottom;
+    align-content: end;
     
 
 }
@@ -160,7 +169,8 @@ a:link {
   border-right: solid #5D5D5D 2px;
   z-index: -1;
   background-color: #FF7D00;
-  right: 39%;
+  /*right: 39%;*/
+  width: 60.7%;
 }
 
 #summary {
@@ -171,11 +181,10 @@ a:link {
 }
 
 #menu-wrapper {
-    display: inherit;
 	border: solid black 1px;
 	aspect-ratio: 17/20;
 	background-color: #FFFFFF;
-    height: 32vh;
+    height: 84%;
 }
 
 @media (orientation: portrait) {
