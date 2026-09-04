@@ -1,0 +1,37 @@
+<body>
+    <div id='background'></div>
+    <main>
+    <header class='content-wrapper header-content'>
+        <div class='name-card'>
+            <h1>ANTON PLISNIER</h1>
+            <p>Trainee Software Developer</p>
+        </div>
+        <div class='contact-card'>
+            <p class='contact' id='phone'>+44 (0) 7495 342 919</p>
+            <p class='contact' id='email'>antonplisnier@proton.me</p>
+        </div>
+        </header>
+        <section class='content-wrapper main-content'>
+            <h2 class='content-item' id='summary'>./Summary</h2>
+            <article class='content-left bottom-border white'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </article>
+            <article class='content-right'>
+                <form class='flexbox' id='menu-wrapper'>
+                <a class='menu-button' href='<?= BASEURL ?>private/static/AntonPlisnier_CV.pdf'>CV</a>
+                    <a class='menu-button' href='https://linkedin.com/in/antonplisnier'>Linkedin</a>
+                    <a class='menu-button' href='https://github.com/Apliz'>Github</a>
+                </form>
+            </article>
+            <!--<div class= 'bottom-border white column-1 row-3'></div>-->
+            <div class='row-subgrid column-2 row-3' id='menu-subgrid'>
+                <div class='bottom-border white'></div>
+                <div class='bottom-border orange'></div>
+            </div>
+            <div class='bottom-border orange column-3 row-3' id=''></div>
+
+        </section>
+    </main>
+        
+</body>
+

@@ -1,0 +1,11 @@
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-right: solid #5D5D5D 2px;
+  z-index: -1;
+  background-color: #FF7D00;
+  right: 39%;
+  /*width: 60.7%;*/
+}
