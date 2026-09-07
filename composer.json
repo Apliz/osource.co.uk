@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "vimeo/psalm": "^6.16"
+    },
+    "autoload" : {
+        "psr-4": {
+            "Mod\\": "core/classes/"
+        }
+    }
+}

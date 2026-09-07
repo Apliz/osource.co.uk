@@ -1,4 +1,5 @@
 <?php
+
 #################
 #
 #   Osource.co.uk
@@ -13,33 +14,14 @@
 #
 ###################
 #################### SESSION
+declare(strict_types=1);
 session_start();
 
 ###################################### CONSTANTS
 
+#ROOT
+const ROOT      =  __DIR__ . '/..';
 
-#CORE
-define('CORE', '../core/');
+require_once(dirname(__DIR__) . '../core/bootstrap.php');
 
-define('BOOTSTRAP', CORE . 'bootstrap.php');
-define('C_CONFIG', CORE . 'config.php');
-define('C_CSS', CORE . 'styles.css');
-define('HTMLHEADER', CORE . 'HTMLHeader.php');
-define('HTMLFOOTER', CORE . 'HTMLFooter.php');
-#VIEWS
-
-define('VIEWS', '../views/');
-define('VIEW_CONTENT', VIEWS . 'content/' );
-define('VIEW_PROC', VIEWS . 'procedures/');
-
-#CONFIG
-
-define('CONFIG', '../config/');
-define('DEBUGMODE', CONFIG . '_debug.php');
-
-#CUSTOM
-define('CUSTOM', '../custom/');
-define('ROUTES', CUSTOM . '_routes.php');
-
-################# BOOTSTRAP
-require_once(BOOTSTRAP);
+$app->run();
