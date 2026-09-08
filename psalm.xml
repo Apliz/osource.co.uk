@@ -13,7 +13,6 @@
         <directory name="core" />
         <directory name="config" />
         <directory name="public" />
-        <directory name="custom" />
         <directory name="views" />
         <ignoreFiles>
             <directory name="vendor" />
