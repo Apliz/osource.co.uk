@@ -22,6 +22,6 @@ session_start();
 #ROOT
 const ROOT      =  __DIR__ . '/..';
 
-require_once(dirname(__DIR__) . '../core/bootstrap.php');
+$app = require_once(dirname(__DIR__) . '../core/bootstrap.php');
 
 $app->run();

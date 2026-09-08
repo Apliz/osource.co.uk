@@ -1,4 +1,5 @@
 <?php
+
 #################################
 #
 #   osource.co.uk
@@ -11,18 +12,20 @@
 #
 #
 #################################
+$viewContent = require(__DIR__ . '../../views/content/');
+$viewProcedure = require(__DIR__ . '../../views/procedure/');
 
 return array(
     'default' => array(
-        'view' => VIEW_CONTENT . 'v_profile.php',
-        'proc' => VIEW_PROC . 'p_profile.php'
+        'view' => $viewContent . 'v_profile.php',
+        'proc' => $viewProcedure . 'p_profile.php'
     ),
     '404'   => array(
-        'view' => VIEW_CONTENT . 'v_404.php',
-        'proc' => VIEW_PROC . 'p_404.php'
+        'view' => $viewContent . 'v_404.php',
+        'proc' => $viewProcedure . 'p_404.php'
     ),
-    'profile' => array( 
+    'profile' => array(
         'view' => VIEW_CONTENT . 'v_profile.php',
-        'proc' => VIEW_PROC . 'p_profile.php'
+        'proc' => $viewProcedure . 'p_profile.php'
     )
 );
