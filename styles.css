@@ -29,10 +29,12 @@
 }
 
 html {
-    overflow: hidden;
+    height: 100%;
 }
 body {
-    margin: unset;
+    display: grid;
+    grid-template-rows: 0.32fr auto;
+    margin: 3% 0% 0% 0%;
 }
 h1 {
 	font-family: EB Garamond;
@@ -46,6 +48,15 @@ a:link {
     color: black;
 
 }
+
+.temp-main {
+    display: inherit;
+    grid-template-columns: 0.64fr auto auto;
+    grid-template-rows: 0.1fr auto;
+    grid-row: 2 / 3;
+    margin: 2% 12% 0% 12%
+}
+
 .content-wrapper {
 	display: grid;
     font-family: EB Garamond;
@@ -54,18 +65,25 @@ a:link {
 
 }
 
+.footer {
+    margin: 0% 12% 0% 12%;
+    display: grid;
+    grid-template-columns: 0.645fr auto;
+}
+
 .main-content {
-    grid-template-columns: 0.54fr 0.33fr auto;
-	grid-template-rows: 0.1fr 0.63fr 0.23fr;
-	margin: 7vh 12% auto 17%;
+    grid-template-columns: 0.55fr 0.33fr auto;
+	grid-template-rows: 0.1fr 0.9fr;
+	margin: 5% 0% 0% 8%;
 }
 
 .header-content {
+    grid-row: 1 / 2;
+    height: 100%;
     grid-template-columns: 0.81fr auto;
     grid-template-rows: auto;
-margin: 5% 12% 4% 9%;
-    /*width: 71%;*/
-}
+    margin: 0% 10% 0% 8%;
+    }
 
 .name-card {
     width: 44vw;
@@ -98,17 +116,17 @@ margin: 5% 12% 4% 9%;
 }
 
 .content-left {
-    grid-row: 2/4;
+/*    grid-row: 2/4;*/
 }
 
 .content-right {
-	grid-column: 2 / 4;
+    grid-column: 2 / 4;
     grid-row: 2 / 4;
 }
 
 .flexbox {
-	/*display: flex;*/
-	/*flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
 }
 .article-text {
     line-height: 1.6;
@@ -120,17 +138,11 @@ margin: 5% 12% 4% 9%;
 	border-radius: 0;
 	border: solid black 1px;
 	filter: drop-shadow(2px 2px black);
-	/*text-align: left;*/
-	width: 64%;
-	margin: 19% 18% 0% 18%;
-	font-family: inherit;
 	letter-spacing: 2%;
     display: grid;
     grid-template-columns: 0.96fr auto;
-    align-content: end;
-    padding: unset;
-    
-
+    align-content: end;    
+    margin: 15% 17% 15% 17%;
 }
 
 .menu-button > h4 {
@@ -138,11 +150,11 @@ margin: 5% 12% 4% 9%;
 }
 
 .bottom-border.white {
-	border-bottom: solid #FFFFFF 3px;
+	/*border-bottom: solid #FFFFFF 3px;*/
 }
 
 .bottom-border.orange {
-	border-bottom: solid #FF7D00 3px;
+	/*border-bottom: solid #FF7D00 3px;*/
 }
 
 .column-1.row-3 {
