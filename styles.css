@@ -56,14 +56,14 @@ a:link {
 
 .main-content {
     grid-template-columns: 0.54fr 0.33fr auto;
-	grid-template-rows: 0.16fr 0.62fr 0.23fr;
+	grid-template-rows: 0.1fr 0.63fr 0.23fr;
 	margin: 7vh 12% auto 17%;
 }
 
 .header-content {
-    grid-template-columns: 0.78fr auto;
+    grid-template-columns: 0.81fr auto;
     grid-template-rows: auto;
-    margin: 5% 12% 4% 17%;
+margin: 5% 12% 4% 9%;
     /*width: 71%;*/
 }
 
@@ -82,7 +82,7 @@ a:link {
     /*margin-left: 2.5vw;*/
     /*padding-left: 2.5vw;*/
     font-weight: bold;
-    margin: 2% 0 auto 6%;
+    margin: 2% 0 auto 8%;
     grid-column: 2 / 3;
     width: 100%;
     /*padding-top: 2%;*/
@@ -103,14 +103,17 @@ a:link {
 
 .content-right {
 	grid-column: 2 / 4;
-    grid-row: 2 / 5;
+    grid-row: 2 / 4;
 }
 
 .flexbox {
 	/*display: flex;*/
 	/*flex-direction: column;*/
 }
-
+.article-text {
+    line-height: 1.6;
+    margin: 9% 7% auto 12%;
+}
 .menu-button {
 	aspect-ratio: 5/1;
 	background: #FFFFFF;
@@ -118,14 +121,20 @@ a:link {
 	border: solid black 1px;
 	filter: drop-shadow(2px 2px black);
 	/*text-align: left;*/
-	/*width: 64%;*/
-	margin: 22% 18% -7% 18%;
+	width: 64%;
+	margin: 19% 18% 0% 18%;
 	font-family: inherit;
 	letter-spacing: 2%;
-    display: inherit;
+    display: grid;
+    grid-template-columns: 0.96fr auto;
     align-content: end;
+    padding: unset;
     
 
+}
+
+.menu-button > h4 {
+    margin: unset;
 }
 
 .bottom-border.white {
@@ -158,7 +167,7 @@ a:link {
 }
 
 #menu-subgrid {
-	grid-template-columns: 0.323fr auto;
+	grid-template-columns: 0.24fr auto;
     margin-top: 24%;
 }
 
@@ -178,14 +187,15 @@ a:link {
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
 	color: #FFFFFF;
-	font-weight: 600;
+	font-weight: 500;
+    margin: 1% 0% 0% 0%;
 }
 
 #menu-wrapper {
 	border: solid black 1px;
 	aspect-ratio: 17/20;
 	background-color: #FFFFFF;
-    height: 78%;
+    height: 74%;
 }
 
 @media (orientation: portrait) {
