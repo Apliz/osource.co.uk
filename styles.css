@@ -80,14 +80,13 @@ a:link {
 .header-content {
     grid-row: 1 / 2;
     height: 100%;
-    grid-template-columns: 0.81fr auto;
+    grid-template-columns: min-content auto;
     grid-template-rows: auto;
     margin: 0% 10% 0% 8%;
     }
 
 .name-card {
-    width: 44vw;
-    /*text-align: center;*/
+    width: 52.5vw;
 }
 .name-card > p {
     /*padding: unset;*/
